@@ -1,3 +1,4 @@
+import { FormajoutgroupComponent } from './formajoutgroup/formajoutgroup.component';
 import { StructureComponent } from './structure/structure.component';
 import { GroupComponent } from './group/group.component';
 import { FormajoutempComponent } from './formajoutemp/formajoutemp.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'groupes', component: GroupComponent },
   { path: 'structure', component: StructureComponent},
   { path: 'Ajout', component: FormajoutempComponent },
+  {path : 'ajoutG' , component : FormajoutgroupComponent }
 ];
 
 @NgModule({

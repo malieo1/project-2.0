@@ -16,7 +16,7 @@ export class TablegroupComponent implements AfterViewInit, OnInit {
   dataSource: TablegroupDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['id', 'nomG', 'localisation','actions'];
 
   ngOnInit() {
     this.dataSource = new TablegroupDataSource();
