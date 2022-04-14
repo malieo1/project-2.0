@@ -26,6 +26,7 @@ import { TablestructureComponent } from './tablestructure/tablestructure.compone
 import { GroupComponent } from './group/group.component';
 import { StructureComponent } from './structure/structure.component';
 import { FormajoutgroupComponent } from './formajoutgroup/formajoutgroup.component';
+import { FormajoutstructureComponent } from './formajoutstructure/formajoutstructure.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { FormajoutgroupComponent } from './formajoutgroup/formajoutgroup.compone
     GroupComponent,
     StructureComponent,
     FormajoutgroupComponent,
+    FormajoutstructureComponent,
   ],
   imports: [
     BrowserModule,

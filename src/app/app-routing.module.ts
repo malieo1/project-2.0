@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { FormajoutstructureComponent } from './formajoutstructure/formajoutstructure.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'groupes', component: GroupComponent },
   { path: 'structure', component: StructureComponent},
   { path: 'Ajout', component: FormajoutempComponent },
-  {path : 'ajoutG' , component : FormajoutgroupComponent }
+  { path : 'ajoutG' , component : FormajoutgroupComponent },
+  { path : 'bm', component : FormajoutstructureComponent }
 ];
 
 @NgModule({
