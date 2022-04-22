@@ -26,7 +26,9 @@ import { TablestructureComponent } from './tablestructure/tablestructure.compone
 import { GroupComponent } from './group/group.component';
 import { StructureComponent } from './structure/structure.component';
 import { FormajoutgroupComponent } from './formajoutgroup/formajoutgroup.component';
-import { FormajoutstructureComponent } from './formajoutstructure/formajoutstructure.component';
+
+import {HttpClientModule} from '@angular/common/http';
+import { FormastructureComponent } from './formastructure/formastructure.component';
 
 
 @NgModule({
@@ -43,12 +45,14 @@ import { FormajoutstructureComponent } from './formajoutstructure/formajoutstruc
     GroupComponent,
     StructureComponent,
     FormajoutgroupComponent,
-    FormajoutstructureComponent,
+    FormastructureComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     // * MATERIAL IMPORTS
     MatSidenavModule,
     MatToolbarModule,

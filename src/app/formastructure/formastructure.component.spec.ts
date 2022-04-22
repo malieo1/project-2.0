@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormajoutstructureComponent } from './formajoutstructure.component';
+import { FormastructureComponent } from './formastructure.component';
 
-describe('FormajoutstructureComponent', () => {
-  let component: FormajoutstructureComponent;
-  let fixture: ComponentFixture<FormajoutstructureComponent>;
+describe('FormastructureComponent', () => {
+  let component: FormastructureComponent;
+  let fixture: ComponentFixture<FormastructureComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormajoutstructureComponent ]
+      declarations: [ FormastructureComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormajoutstructureComponent);
+    fixture = TestBed.createComponent(FormastructureComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
