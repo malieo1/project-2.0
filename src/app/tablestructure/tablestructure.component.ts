@@ -16,7 +16,7 @@ export class TablestructureComponent implements AfterViewInit, OnInit {
   dataSource: TablestructureDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['nom', 'description1','site', 'numero','actions'];
 
   ngOnInit() {
     this.dataSource = new TablestructureDataSource();

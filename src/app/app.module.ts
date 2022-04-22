@@ -29,6 +29,7 @@ import { FormajoutgroupComponent } from './formajoutgroup/formajoutgroup.compone
 
 import {HttpClientModule} from '@angular/common/http';
 import { FormastructureComponent } from './formastructure/formastructure.component';
+import { AffectationgroupComponent } from './affectationgroup/affectationgroup.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { FormastructureComponent } from './formastructure/formastructure.compone
     StructureComponent,
     FormajoutgroupComponent,
     FormastructureComponent,
+    AffectationgroupComponent,
 
   ],
   imports: [

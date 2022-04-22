@@ -1,3 +1,4 @@
+import { AffectationgroupComponent } from './affectationgroup/affectationgroup.component';
 import { FormastructureComponent } from './formastructure/formastructure.component';
 import { FormajoutgroupComponent } from './formajoutgroup/formajoutgroup.component';
 import { StructureComponent } from './structure/structure.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'groupes', component: GroupComponent },
   { path: 'structure', component: StructureComponent},
+  {path :'affecter', component : AffectationgroupComponent },
   { path: 'Ajout', component: FormajoutempComponent },
   { path : 'ajoutG' , component : FormajoutgroupComponent },
   {path :'ajoutS', component : FormastructureComponent}

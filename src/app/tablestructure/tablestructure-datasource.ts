@@ -6,32 +6,22 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: Replace this with your own data model type
 export interface TablestructureItem {
-  name: string;
-  id: number;
+  nom: string;
+  description1:string;
+  site:string;
+  numero: number;
+
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: TablestructureItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
+  {nom: 'minister education', description1:'chnya tamel', site:'', numero: 56438976},
+  {nom: 'minister education', description1:'chnya tamel', site:'', numero: 56438976},
+  {nom: 'minister education', description1:'chnya tamel', site:'', numero: 56438976},
+  {nom: 'minister education', description1:'chnya tamel', site:'', numero: 56438976},
+  {nom: 'minister education', description1:'chnya tamel', site:'', numero: 56438976},
+  {nom: 'minister education', description1:'chnya tamel', site:'', numero: 56438976},
+
 ];
 
 /**
@@ -94,8 +84,7 @@ export class TablestructureDataSource extends DataSource<TablestructureItem> {
     return data.sort((a, b) => {
       const isAsc = this.sort.direction === 'asc';
       switch (this.sort.active) {
-        case 'name': return compare(a.name, b.name, isAsc);
-        case 'id': return compare(+a.id, +b.id, isAsc);
+        case 'name': return compare(a.nom, b.nom, isAsc);
         default: return 0;
       }
     });

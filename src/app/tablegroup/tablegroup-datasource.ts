@@ -8,16 +8,16 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 export interface TablegroupItem {
   nomG: string;
   id: number;
-  localisation : string;
+  description : string;
 
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: TablegroupItem[] = [
-  {id: 1, nomG: 'makhzoun', localisation :'el blasa'},
-  {id: 2, nomG: 'makhzoun',  localisation :'el blasa'},
-  {id: 3, nomG: 'makhzoun',  localisation :'el blasa'},
-  {id: 4, nomG: 'makhzoun',  localisation :'el blasa'},
+  {id: 1, nomG: 'makhzoun', description :'mtaa ketha ketha'},
+  {id: 2, nomG: 'makhzoun',  description :'mtaa ketha ketha'},
+  {id: 3, nomG: 'makhzoun',  description :'mtaa ketha ketha'},
+  {id: 4, nomG: 'makhzoun',  description :'mtaa ketha ketha'},
 
 
 ];
